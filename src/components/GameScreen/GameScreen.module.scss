@@ -1,0 +1,219 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.progressContainer {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #4ecdc4, #44a08d);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.progressText {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.question {
+  font-size: 3rem;
+  margin: 0 0 30px 0;
+  color: #333;
+  font-family: 'Azeret Mono Variable', monospace;
+  text-align: center;
+}
+
+.inputContainer {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.answerInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 3rem;
+  text-align: center;
+  border: 3px solid #667eea;
+  border-radius: 15px;
+  font-family: 'Azeret Mono Variable', monospace;
+  background: white;
+  color: #333;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: #4ecdc4;
+    box-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+  }
+
+  &::placeholder {
+    color: #999;
+    font-size: 1.5rem;
+  }
+}
+
+.submitButton {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 25px;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 4px 40px 40px 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.owlContainer {
+  margin-bottom: 4px;
+}
+
+.owl {
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.resultText {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.correct {
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
+  color: #4ecdc4;
+}
+
+.incorrect {
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
+  color: #ff6b6b;
+}
+
+.answerText {
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Azeret Mono Variable', monospace;
+  margin: 0;
+}
+
+.nextButton {
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
+  border: none;
+  border-radius: 25px;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(78, 205, 196, 0.6);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+  }
+}
+
+.tryAgainButton {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  border: none;
+  border-radius: 25px;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 107, 107, 0.6);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "Mate Buf - Fun Math Game",
+  "short_name": "Mate Buf",
+  "description": "An engaging small math game where you solve multiplication problems to collect precious gems and beat your best times.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a90e2",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["education", "games", "entertainment"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
